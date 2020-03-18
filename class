@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+class data1
+{
+private:
+	int n;
+public:
+	data1() {}
+	void arr()
+	{
+		int *a = new int[20];
+		cin >> n;
+		for (int i = 1; i <= n; i++)
+			a[i] = i * i;
+		for (int i = n; i >= 1; i--)
+		{
+			cout.width(5);
+			cout << a[i];
+		}
+			
+		delete[]a;
+	}
+};
+
+
+int main()
+{
+	data1 s1;
+	s1.arr();
+	return(0);
+}
